@@ -3,3 +3,8 @@
 ################################################################################
 
 /DDDPaint/Debug
+/Release
+/.vs/DDDPaint/v14
+/DDDPaint/Release
+/DDDPaint.VC.VC.opendb
+/DDDPaint.VC.db

@@ -1,0 +1,36 @@
+////////////////////////////////////////////////////////////////////////////////
+// Filename: cegui.h
+////////////////////////////////////////////////////////////////////////////////
+#ifndef _CEGUI_H_
+#define _CEGUI_H_
+
+//////////////
+// INCLUDES //
+//////////////
+#include "CEGUI.h"
+#include "RendererModules/Direct3D10/CEGUIDirect3D10Renderer.h"
+#include "CEGUISchemeManager.h"
+#include "CEGUISystem.h"
+#include "CEGUIWindow.h"
+#include "CEGUIWindowManager.h"
+
+////////////////////////////////////////////////////////////////////////////////
+// Class name: GUI
+////////////////////////////////////////////////////////////////////////////////
+class GUI
+{
+public:
+	GUI();
+	GUI(const GUI&);
+	~GUI();
+
+	bool Initialize(ID3D10Device*);
+	void Shutdown();
+	void Render();
+
+private:
+	CEGUI::Direct3D10Renderer* m_Renderer;
+	CEGUI::Window* myRoot;
+};
+
+#endif

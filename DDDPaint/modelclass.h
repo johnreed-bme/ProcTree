@@ -9,7 +9,6 @@
 // INCLUDES //
 //////////////
 #include <d3d11.h>
-#include <d3dx10math.h>
 #include <Importer.hpp>      // C++ importer interface
 #include <scene.h>           // Output data structure
 #include <postprocess.h>     // Post processing flags
